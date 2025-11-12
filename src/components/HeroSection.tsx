@@ -23,7 +23,7 @@ export default function HeroSection() {
 
           <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-3">
             <a
-              href="/resume.pdf"
+              href="/Khin-Sakphearoth-CV.pdf"
               className="inline-block px-4 py-2 rounded-lg bg-white font-medium"
             >
               Download CV

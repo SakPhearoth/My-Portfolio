@@ -1,11 +1,10 @@
-// app/components/SkillsSection.tsx
 import React from "react";
 
 type Group = {
   key: string;
   label: string;
-  categoryIcon: string; // small icon to the left of the label
-  icons: string[]; // paths to icon images (in /public/icons/)
+  categoryIcon: string;
+  icons: string[];
 };
 
 const groups: Group[] = [
@@ -54,40 +53,43 @@ const groups: Group[] = [
 export default function SkillsSection() {
   return (
     <section id="skills" className="max-w-6xl mx-auto px-6 py-10">
-      <div className="border border-black rounded-md bg-white/40 p-6">
-        <h2 className="text-xl font-semibold decoration-accent decoration-[#086CB4] decoration-2 underline underline-offset-2 mb-6">
+      <div className="border border-black rounded-md bg-white/40 p-6 sm:p-8">
+        <h2 className="text-xl sm:text-2xl font-semibold underline decoration-[#086CB4] decoration-2 underline-offset-4 mb-6 text-center sm:text-left">
           Technical Skills
         </h2>
 
         <div className="space-y-8">
           {groups.map((g) => (
             <div key={g.key}>
-              {/* heading with small category icon */}
-              <div className="flex items-center gap-3 mb-3">
+              {/* category heading */}
+              <div className="flex items-center justify-center sm:justify-start gap-3 mb-3">
                 <img
                   src={g.categoryIcon}
                   alt={`${g.label} icon`}
-                  className="w-8 h-8 object-contain"
+                  className="w-6 h-6 sm:w-8 sm:h-8 object-contain"
                 />
-                <p className="text-lg">{g.label}</p>
+                <p className="text-base sm:text-lg">{g.label}</p>
               </div>
 
-              {/* chip container */}
-              <div className="inline-flex items-center gap-3 p-3 border border-black rounded-md bg-white">
+              {/* skill icons container */}
+              <div
+                className="
+                  flex flex-wrap justify-center sm:justify-start gap-3 p-3
+                  border border-black rounded-md bg-white
+                "
+              >
                 {g.icons.map((src) => (
                   <div
                     key={src}
-                    className="w-14 h-14 rounded-md flex items-center justify-center bg-transparent"
-                    /* w-14/h-14 => 56px. Change to w-16/h-16 for 64px */
+                    className="
+                      w-14 h-14 sm:w-16 sm:h-16 rounded-md flex items-center justify-center
+                      bg-transparent transition-transform duration-200 hover:scale-105
+                    "
                   >
                     <img
                       src={src}
-                      alt={
-                        src.split("/").pop()?.replace(/[-_.]/g, " ") ||
-                        "tech icon"
-                      }
-                      className="w-10 h-10 object-contain"
-                      /* img inside chip is 40x40 (w-10 = 40px). Tweak if needed. */
+                      alt={src.split("/").pop()?.replace(/[-_.]/g, " ") || "icon"}
+                      className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
                     />
                   </div>
                 ))}

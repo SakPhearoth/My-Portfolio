@@ -6,6 +6,7 @@ import EducationBackground from "@/components/EducationBackground";
 import ProjectsSection from "@/components/ProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
 import ContactSection from "@/components/ContactSection";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function App() {
   return (
@@ -19,7 +20,9 @@ export default function App() {
         <ProjectsSection />
         <ContactSection />
       </main>
-      <footer className="max-w-4xl mx-auto px-6 py-8 text-center text-sm text-gray-500">
+      <ScrollToTopButton />
+      <hr />
+      <footer className="max-w-4xl mx-auto px-6 py-8 text-center text-md text-gray-500">
         © {new Date().getFullYear()} Khin Sakphearoth
       </footer>
     </div>
