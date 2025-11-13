@@ -16,7 +16,7 @@ const groups: Group[] = [
       "/icons/java.png",
       "/icons/javascript.png",
       "/icons/c.png",
-      "/icons/c++.png",
+      "/icons/cpp.png",
     ],
   },
   {
@@ -24,9 +24,9 @@ const groups: Group[] = [
     label: "Web Technologies:",
     categoryIcon: "/icons/website.png",
     icons: [
-      "/icons/HTML5.png",
-      "/icons/CSS3.png",
-      "/icons/Next.js.png",
+      "/icons/html.png",
+      "/icons/css.png",
+      "/icons/nextjs.png",
       "/icons/Spring.png",
       "/icons/spring-boot.png",
     ],
