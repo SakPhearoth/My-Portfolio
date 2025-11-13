@@ -10,7 +10,7 @@ import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-rose-50 text-gray-900">
+    <div className="min-h-screen bg-background text-gray-900">
       <Navbar />
       <main>
         <HeroSection />
