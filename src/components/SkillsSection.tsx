@@ -13,9 +13,9 @@ const groups: Group[] = [
     label: "Languages:",
     categoryIcon: "/icons/code-bracket.png",
     icons: [
-      "/icons/java.png",
-      "/icons/javascript.png",
-      "/icons/c.png",
+      "/icons/java-temp.png",
+      "/icons/java-script-temp.png",
+      "/icons/c-temp.png",
       "/icons/cpp.png",
     ],
   },
@@ -27,7 +27,7 @@ const groups: Group[] = [
       "/icons/html.png",
       "/icons/css.png",
       "/icons/nextjs.png",
-      "/icons/spring.png",
+      "/icons/spring-temp.png",
       "/icons/spring-boot.png",
     ],
   },
@@ -35,23 +35,21 @@ const groups: Group[] = [
     key: "db",
     label: "Database:",
     categoryIcon: "/icons/database.png",
-    icons: ["/icons/postgresql.png"],
+    icons: ["/icons/postgresql-temp.png"],
   },
   {
     key: "tools",
     label: "Tools:",
     categoryIcon: "/icons/gear.png",
     icons: [
-      "/icons/git.png",
+      "/icons/git-temp.png",
       "/icons/github.png",
-      "/icons/postman.png",
-       "/icons/swagger.png",
+      "/icons/postman-temp.png",
+      "/icons/swagger-temp.png",
       "/icons/keycloak.png",
-      
     ],
   },
 ];
-
 
 export default function SkillsSection() {
   return (
