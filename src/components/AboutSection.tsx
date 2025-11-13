@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutSection() {
   return (
     <section id="about" className="max-w-6xl mx-auto px-6">
-      <h2 className="text-xl text-center font-semibold underline  decoration-[#086CB4] decoration-2 underline-offset-2 mb-6">
+      <h2 className="text-xl text-center font-semibold underline decoration-[#086CB4] decoration-2 underline-offset-4 mb-6">
         About Me
       </h2>
       <div className="bg-white border border-black rounded-md bg-white/40 p-8">
