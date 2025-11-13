@@ -8,12 +8,13 @@ export default function AboutSection() {
       </h2>
       <div className="bg-white border border-black rounded-md bg-white/40 p-8">
         <p className="text-lg">
-          Hi, I'm Khin Sakphearoth, a recent Full Stack Web Development graduate
-          from ISTAD. <br /> I'm passionate about building responsive and
-          user-friendly web applications using modern technologies. <br />{" "}
-          Currently, I'm seeking an internship opportunity where I can apply my
-          skills, contribute to real-world projects, and continue growing as a
-          developer.
+          Hi, I'm <strong>Khin Sakphearoth</strong>, a recent Full Stack Web
+          Development graduate from <strong>ISTAD</strong>. <br />
+          I'm passionate about designing and building reliable backend systems
+          that power seamless and scalable web applications. <br />
+          Currently, I'm seeking an <strong>internship opportunity</strong>{" "}
+          where I can apply my backend development skills, work on real-world
+          projects, and continue growing as a developer.
         </p>
       </div>
     </section>
