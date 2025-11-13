@@ -38,11 +38,10 @@ const educationData: Edu[] = [
 export default function EducationBackground() {
   return (
     <section id="education" className="max-w-6xl mx-auto px-6 py-10">
+      <h2 className="text-xl sm:text-2xl font-semibold underline decoration-[#086CB4] decoration-2 underline-offset-4 mb-6 text-center sm:text-left">
+        Education Background
+      </h2>
       <div className="border border-black rounded-md bg-white/40 p-6 sm:p-8">
-        <h2 className="text-xl sm:text-2xl font-semibold underline decoration-[#086CB4] decoration-2 underline-offset-4 mb-6 text-center sm:text-left">
-          Education Background
-        </h2>
-
         <ul className="space-y-4">
           {[
             {

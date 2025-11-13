@@ -53,11 +53,10 @@ const groups: Group[] = [
 export default function SkillsSection() {
   return (
     <section id="skills" className="max-w-6xl mx-auto px-6 py-10">
+      <h2 className="text-xl sm:text-2xl font-semibold underline decoration-[#086CB4] decoration-2 underline-offset-4 mb-6 text-center sm:text-left">
+        Technical Skills
+      </h2>
       <div className="border border-black rounded-md bg-white/40 p-6 sm:p-8">
-        <h2 className="text-xl sm:text-2xl font-semibold underline decoration-[#086CB4] decoration-2 underline-offset-4 mb-6 text-center sm:text-left">
-          Technical Skills
-        </h2>
-
         <div className="space-y-8">
           {groups.map((g) => (
             <div key={g.key}>
@@ -88,7 +87,9 @@ export default function SkillsSection() {
                   >
                     <img
                       src={src}
-                      alt={src.split("/").pop()?.replace(/[-_.]/g, " ") || "icon"}
+                      alt={
+                        src.split("/").pop()?.replace(/[-_.]/g, " ") || "icon"
+                      }
                       className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
                     />
                   </div>
