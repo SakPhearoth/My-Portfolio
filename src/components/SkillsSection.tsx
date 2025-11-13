@@ -27,7 +27,7 @@ const groups: Group[] = [
       "/icons/html.png",
       "/icons/css.png",
       "/icons/nextjs.png",
-      "/icons/Spring.png",
+      "/icons/spring.png",
       "/icons/spring-boot.png",
     ],
   },
@@ -35,7 +35,7 @@ const groups: Group[] = [
     key: "db",
     label: "Database:",
     categoryIcon: "/icons/database.png",
-    icons: ["/icons/PostgresSQL.png"],
+    icons: ["/icons/postgresql.png"],
   },
   {
     key: "tools",
@@ -49,6 +49,7 @@ const groups: Group[] = [
     ],
   },
 ];
+
 
 export default function SkillsSection() {
   return (
