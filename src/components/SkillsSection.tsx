@@ -45,7 +45,9 @@ const groups: Group[] = [
       "/icons/git.png",
       "/icons/github.png",
       "/icons/postman.png",
+       "/icons/swagger.png",
       "/icons/keycloak.png",
+      
     ],
   },
 ];
